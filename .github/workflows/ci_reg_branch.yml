@@ -22,4 +22,4 @@ jobs:
 
       - name: Train and Evaluate models
         run: |
-          python main.py
+          python HousingRegression/main.py
