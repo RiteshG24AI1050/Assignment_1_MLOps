@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-def load_data():
+def load_boston_data():
     data_url = "http://lib.stat.cmu.edu/datasets/boston"
     raw_df = pd.read_csv(data_url, sep=r"\s+", skiprows=22, header=None)
     
@@ -18,5 +18,6 @@ def load_data():
     df['MEDV'] = target
     return df
 
-df = load_data()
+df = load_boston_data()
+print("Shape:", df.shape)     
 print(df.head())
