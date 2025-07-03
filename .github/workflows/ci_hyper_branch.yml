@@ -2,7 +2,7 @@ name: ML Model - 3 regression models comparison
 
 on:
   push:
-    branches: [ reg_branch ]
+    branches: [ hyper_branch ]
 
 jobs:
   train:
